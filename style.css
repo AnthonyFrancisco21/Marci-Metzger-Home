@@ -10,6 +10,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 
 .nav-link {
   position: relative;
@@ -50,8 +53,8 @@ html {
   position: fixed;
   margin-top: 5em;
   top: 0;
-  right: -65%;
-  height: 100%;
+  right: -85%;
+  height: 80%;
   width: 65%;
   z-index: 9;
   background-color: var(--quinary-color);
@@ -59,7 +62,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 5em;
+
   transition: right 0.3s ease;
 }
 
@@ -138,6 +141,7 @@ html {
 @media (max-width: 900px) {
   .hero-title {
     text-align: center;
+    font-size: 2rem;
   }
 
   .hero-des {
@@ -148,6 +152,28 @@ html {
     text-align: center;
     justify-content: center;
     gap: 1em;
+  }
+
+  .hero-btn-1 {
+    font-size: 1rem !important;
+    padding: 6px 12px !important;
+  }
+  .hero-btn-2 {
+    font-size: 1rem !important;
+    padding: 6px 12px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-title {
+    margin-top: 1em;
+  }
+
+  .hero-btn-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 

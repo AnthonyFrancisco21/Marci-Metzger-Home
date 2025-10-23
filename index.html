@@ -42,7 +42,7 @@
           </li>
           <li>
             <a
-              class="btn btn-ghost bg-[url('images/logo.webp')] bg-cover bg-center w-65 h-15"
+              class="btn btn-ghost bg-[url('images/logo.webp')] bg-cover bg-center w-55 h-15"
               href="index.html"
             ></a>
           </li>
@@ -123,16 +123,14 @@
       </nav>
     </div>
 
-    <section class="hero-section">
+    <section class="hero-section overflow-hidden">
       <div
-        class="hero min-h-screen"
+        class="hero min-h-screen overflow-hidden"
         style="background-image: url(images/hero-section-img.png)"
       >
         <div class="hero-overlay bg-black/50"></div>
 
-        <div
-          class="hero-content w-[90%] hero-content text-neutral-content text-left"
-        >
+        <div class="hero-content w-[90%] text-neutral-content text-left">
           <div class="w-[100%] mx-auto">
             <h1
               data-aos="fade-up"
@@ -725,6 +723,9 @@
       AOS.init({
         duration: 1000,
         once: true,
+        disable: function () {
+          return window.innerWidth < 300;
+        },
       });
     </script>
   </body>

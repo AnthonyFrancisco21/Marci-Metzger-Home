@@ -14,15 +14,18 @@ function toggleMenu() {
   const sideBar = document.querySelector(".side-bar");
   const menuIcon = document.querySelector(".menu-svg");
   const closeIcon = document.querySelector(".close-svg");
+  const body = document.body;
 
   sideBar.classList.toggle("open");
 
   if (sideBar.classList.contains("open")) {
     menuIcon.style.display = "none";
     closeIcon.style.display = "block";
+    body.style.overflow = "hidden";
   } else {
     menuIcon.style.display = "block";
     closeIcon.style.display = "none";
+    body.style.overflow = "";
   }
 }
 
