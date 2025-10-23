@@ -1,12 +1,3 @@
-window.addEventListener("scroll", function () {
-  const banners = document.querySelectorAll(".banner-1, .banner-2, .banner-3");
-  banners.forEach((banner) => {
-    let speed = 0.5;
-    let offset = window.scrollY * speed;
-    banner.style.backgroundPositionY = `${offset}px`;
-  });
-});
-
 document.querySelector(".hero-btn-1").addEventListener("click", function () {
   document.getElementById("contact-section").scrollIntoView({
     behavior: "smooth",
